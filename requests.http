@@ -1,0 +1,29 @@
+GET http://localhost:3000/books HTTP/1.1
+
+###
+GET http://localhost:3000/books/1 HTTP/1.1
+
+###
+POST http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+
+{
+  "autor": "John",
+  "isbn": 9781234567897,
+  "editorial": "paez",
+  "paginas": 64
+}
+
+###
+PUT http://localhost:3000/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "autor": "Nico",
+  "isbn": 4587434467796,
+  "editorial": "delgadillo",
+  "paginas": 98
+}
+
+###
+DELETE http://localhost:3000/books/1 HTTP/1.1
